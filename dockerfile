@@ -12,7 +12,7 @@ RUN apt-get update && \
 
 # 4. (Optional) Set up a custom environment variable for your web directory
 WORKDIR /var/www/html
-
+COPY index.html .
 # 5. Expose HTTP port 80 to allow external access
 EXPOSE 80
 
